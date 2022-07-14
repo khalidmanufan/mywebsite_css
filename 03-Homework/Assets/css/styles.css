@@ -78,8 +78,9 @@ body{
     color: var(--red);
     letter-spacing: 0.4rem;
     text-transform: uppercase;
-    
     text-align: center;
+    
+    padding-top: 50px;
 
 }
 .banner-link{
@@ -107,8 +108,22 @@ body{
     
 
 }
+.popular-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.popular-img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    flex: 33.33%;
+    padding: 5px;
+
+}
 .price{
-    position: absolute;
+    position:fixed;
     top: 0;
     right: 0;
 }
