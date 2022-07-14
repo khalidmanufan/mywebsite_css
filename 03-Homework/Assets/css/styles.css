@@ -1,0 +1,136 @@
+:root {
+    --red: #ff0000ff;
+--orange-pantone: #ff5a00ff;
+--orange-peel: #ff9a00ff;
+--cyber-yellow: #ffce00ff;
+--middle-yellow: #ffe808ff;
+
+}
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+
+}
+body{
+    margin: 0;
+    min-height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.2rem;
+    background-color: black;
+    color: white;
+    
+}
+.header {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 6.8rem;
+}
+.main{
+    margin-top: 6.8rem;
+}
+.nav-container{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+.nav-links-container {
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+.nav-link {
+    margin: 1.6rem;
+}
+.nav-link a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color:var(--orange-peel) ;
+
+}
+.nav-link a:hover {
+    color:var(--cyber-yellow) ;
+
+}
+.nav-link img {
+    width: 3.2rem;
+    height: 3.2rem;
+}
+.banner {
+    margin: 6.8rem;
+    background-image: url(../image/Baklava\(1\).png);
+    height: 260px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.title {
+    font-size: 8rem;
+    font-weight: 500;
+    color: var(--red);
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
+    
+    text-align: center;
+
+}
+.banner-link{
+    text-align: center;
+    
+}
+.btn{
+    font-size: 2.1rem;
+    text-decoration: none;
+    color: black;
+
+}
+.sellers-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.sellers-img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+
+}
+.price{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+h2{
+    font-size: 5rem;
+}
+
+@media screen and (max-width: 596px) {
+    .nav-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-link{
+        flex-direction: column;
+        align-items: center;
+    }
+    .header{
+        position: static;
+        height: 100%;
+    }
+
+    
+}
