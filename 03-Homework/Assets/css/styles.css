@@ -102,10 +102,8 @@ body{
     width: 100%;
     height: 100%;
     object-fit: contain;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex: 33.33%;
+    padding: 5px;
     
 
 }
